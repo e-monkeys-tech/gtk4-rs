@@ -32,11 +32,11 @@ impl WidgetImpl for SquaresWidget {
         let width = (widget.width() / 2) as f32;
         let height = (widget.height() / 2) as f32;
 
-        let red_color = gdk::RGBA::RED;
+        let red_color = gdk::RGBA::LSG;
         let rect = graphene::Rect::new(0_f32, 0_f32, width, height);
         snapshot.append_color(&red_color, &rect);
 
-        let green_color = gdk::RGBA::GREEN;
+        let green_color = gdk::RGBA::REBECCA_PURPLE;
         let rect = graphene::Rect::new(width, 0_f32, width, height);
         snapshot.append_color(&green_color, &rect);
 
@@ -44,7 +44,7 @@ impl WidgetImpl for SquaresWidget {
         let rect = graphene::Rect::new(0_f32, height, width, height);
         snapshot.append_color(&yellow_color, &rect);
 
-        let blue_color = gdk::RGBA::BLUE;
+        let blue_color = gdk::RGBA::ELECTRIC_INDIGO ;
         let rect = graphene::Rect::new(width, height, width, height);
         snapshot.append_color(&blue_color, &rect);
     }
